@@ -1,11 +1,12 @@
 .PHONY: all build release run serve purge-cache clean
 
-AWS_S3_BUCKET := blog.jessfraz.com
+AWS_S3_BUCKET := blog.thiagomachado.com
 AWS_ACCESS_KEY := ${AMAZON_ACCESS_KEY_ID}
 AWS_SECRET_KEY := ${AMAZON_SECRET_ACCESS_KEY}
 export AWS_S3_BUCKET AWS_ACCESS_KEY AWS_SECRET_KEY
 
-REGISTRY := r.j3ss.co
+#REGISTRY := r.j3ss.co
+REGISTRY := dublado
 DOCKER_IMAGE := $(REGISTRY)/blog
 
 PORT := 1337
